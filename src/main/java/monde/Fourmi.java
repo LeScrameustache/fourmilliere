@@ -21,7 +21,16 @@ public class Fourmi {
 	public void explore() {
 		this.direction.setX(2*Math.random()-1);
 		this.direction.setY(2*Math.random()-1);
-		this.position.translation(direction);
+		this.seDeplace();
+	}
+	
+	
+	public void seDeplace() {
+		this.position.translation(this.direction);
+	}
+	
+	public void ramasseNourriture() {
+		
 	}
 
 	public Point getPosition() {

@@ -1,5 +1,8 @@
 package geometrie;
 
+import monde.Fourmilliere;
+import monde.Fourmi;
+
 public class myApp {
 
 	public static void main(String[] args) {
@@ -19,6 +22,12 @@ public class myApp {
 		B.translation(1, 1);
 		
 		System.out.println("B "+B.toString());
+	}
+	
+	public static void testFourmi() {
+		Fourmilliere f = new Fourmilliere(new Point(0.0,0.0));
+		Fourmi f1 = new Fourmi(f) ;
+		
 	}
 
 }
