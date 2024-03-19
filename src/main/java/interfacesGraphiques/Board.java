@@ -40,7 +40,7 @@ public class Board extends JPanel implements ActionListener {
         setBackground(new Color(232, 232, 232));
 
         // initialize the field state
-       this.f = new Fourmiliere(new Point(200,200),100);
+       this.f = new Fourmiliere(new Point(100,100),100);
        this.nourriture = new Nourriture(new Point(150,150), 50);
         // this timer will call the actionPerformed() method every DELAY ms
         timer = new Timer(DELAY, this);
